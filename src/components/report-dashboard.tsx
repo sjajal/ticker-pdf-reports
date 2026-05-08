@@ -6,10 +6,13 @@ import {
   ArrowDownToLine,
   BarChart3,
   CheckCircle2,
+  Clock3,
   FileText,
   Loader2,
+  Mail,
   Plus,
   Search,
+  Settings2,
   Sparkles,
   Trash2,
 } from "lucide-react";
@@ -231,6 +234,27 @@ export function ReportDashboard() {
                   ))
               )}
             </div>
+          </div>
+
+          <div className="side-card schedule-card">
+            <div className="schedule-title">
+              <Clock3 size={18} />
+              <h2>Scheduled Reports</h2>
+            </div>
+            <div className="schedule-grid">
+              <span>
+                <Mail size={15} />
+                Email delivery
+              </span>
+              <span>
+                <Settings2 size={15} />
+                Env configured
+              </span>
+            </div>
+            <p>
+              Weekday morning cron is ready. Set `REPORT_EMAIL_TO`, `REPORT_TICKERS`, `RESEND_API_KEY`, and
+              `CRON_SECRET` in Vercel to activate it.
+            </p>
           </div>
 
           <div className="side-card warning">
