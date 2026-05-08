@@ -412,6 +412,40 @@ h1 {
   color: var(--amber);
 }
 
+.schedule-card {
+  display: grid;
+  gap: 12px;
+}
+
+.schedule-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.schedule-title svg {
+  color: var(--green);
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.schedule-grid span {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.035);
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .spin {
   animation: spin 1s linear infinite;
 }
